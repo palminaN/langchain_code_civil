@@ -3,18 +3,32 @@ name = "code-civil-langchain"
 version = "0.0.1"
 description = "Agent RAG sur le code civil français"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.12,<3.13"
 dependencies = [
     "numpy",
-    "docling",
     "langchain",
     "python-dotenv",
+    "docling",
     "langchain-openrouter",
     "langgraph",
     "chromadb",
+    "torch",
+    "torchvision",
+    "torchaudio",
     "mistralai",
     "streamlit>=1.65.0",
 ]
+
+
+[[tool.uv.index]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch" }
+torchvision = { index = "pytorch" }
+torchaudio = { index = "pytorch" }
 
 [project.scripts]
 code-civil-langchain = "code_civil_langchain:main"
