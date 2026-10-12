@@ -12,7 +12,11 @@ wheels/
 
 #notebooks
 .ipynb_checkpoints/
-*.ipynb
+
 
 # api keys
 *.env
+
+
+*.pickle
+*.bin
