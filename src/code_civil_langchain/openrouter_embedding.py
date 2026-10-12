@@ -1,6 +1,5 @@
 class CustomEmbedOpenRouter:
 
-    apikey="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"
     endpoint = "https://openrouter.ai/api/v1/embeddings"
     model = "openai/text-embedding-3-small"
 
