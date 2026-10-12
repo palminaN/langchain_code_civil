@@ -12,9 +12,11 @@ dependencies = [
     "langchain-openrouter",
     "langgraph",
     "chromadb",
+    "torch",
+    "torchvision",
+    "torchaudio",
     "mistralai",
     "streamlit>=1.65.0",
-    "langchain-chroma>=1.1.0",
 ]
 
 
