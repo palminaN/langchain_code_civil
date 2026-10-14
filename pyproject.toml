@@ -12,11 +12,12 @@ dependencies = [
     "langchain-openrouter",
     "langgraph",
     "chromadb",
-    "torch",
-    "torchvision",
-    "torchaudio",
     "mistralai",
     "streamlit>=1.65.0",
+    "torch>=2.11.0 ; sys_platform == 'win32'",
+    "torchvision>=0.26.0 ; sys_platform == 'win32'",
+    "torchaudio>=2.11.0 ; sys_platform == 'win32'",
+    "langchain-chroma>=1.1.0",
 ]
 
 
