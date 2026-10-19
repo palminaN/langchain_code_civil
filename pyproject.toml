@@ -18,6 +18,9 @@ dependencies = [
     "torchvision>=0.26.0 ; sys_platform == 'win32'",
     "torchaudio>=2.11.0 ; sys_platform == 'win32'",
     "langchain-chroma>=1.1.0",
+    "gradio>=6.30.0",
+    "langchain-huggingface>=1.2.3",
+    "huggingface-hub>=1.33.0",
 ]
 
 
@@ -42,5 +45,6 @@ build-backend = "uv_build"
 dev = [
     "black>=26.10.0",
     "jupyter>=1.1.1",
+    "pytest>=9.1.1",
     "ruff>=0.16.10",
 ]
